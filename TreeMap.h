@@ -73,4 +73,22 @@ BinaryTree<K> TreeMap<K, V>::keySet() const {
     }
     delete[] allNodes;
     return keys;
+}
+
+//Removes the item denoted by the given key.
+template <typename K, typename V>
+bool TreeMap<K, V>::removeKey(const K& key) {
+    KeyValue kv = { key, V() };
+    return tree.remove(kv);
+}
+
+//Returns the number of key-value mappings in this map
+template <typename K, typename V>
+int TreeMap<K, V>::size() const {
+    return tree.count();
+}
+
+
+
+
 
