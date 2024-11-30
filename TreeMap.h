@@ -90,11 +90,11 @@ int TreeMap<K, V>::size() const {
 
 //Returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
 template <typename K, typename V>
-V& TreeMap<K, V>::operator[](const K& key) {
-    if (!containsKey(key)) {
-        put(key, V());
+V* TreeMap<K, V>::operator[](const K& key) {
+    if (containsKey(key)) {
+        return &get(key); 
     }
-    return get(key);
+    return nullptr; 
 }
 
 
