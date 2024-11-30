@@ -49,3 +49,28 @@ bool TreeMap<K, V>::containsKey(const K& key) const {
     }
 }
 
+//Returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
+template <typename K, typename V>
+V& TreeMap<K, V>::get(const K& key) {
+    KeyValue kv = { key, V() };
+    return tree.get(kv).value;
+}
+
+//Associates the specified value with the specified key in this map
+template <typename K, typename V>
+void TreeMap<K, V>::put(const K& key, const V& value) {
+    KeyValue kv = { key, value };
+    tree.add(kv);
+}
+
+// Returns a Set view of the keys contained in this map.
+template <typename K, typename V>
+BinaryTree<K> TreeMap<K, V>::keySet() const {
+    BinaryTree<K> keys;
+    auto allNodes = tree.toArray();
+    for (int i = 0; i < tree.count(); i++) {
+        keys.add(allNodes[i].key);
+    }
+    delete[] allNodes;
+    return keys;
+
