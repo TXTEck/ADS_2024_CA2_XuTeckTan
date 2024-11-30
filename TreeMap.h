@@ -36,3 +36,16 @@ void TreeMap<K, V>::clear() {
 }
 
 
+//Returns true if this map contains a mapping for the specified key.
+template <typename K, typename V>
+bool TreeMap<K, V>::containsKey(const K& key) const {
+    try {
+        KeyValue kv = { key, V() };
+        tree.get(kv);
+        return true;
+    }
+    catch (const std::logic_error&) {
+        return false;
+    }
+}
+
