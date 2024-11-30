@@ -1,26 +1,45 @@
 #include <iostream>
-#include "TreeMap.h"
+#include <algorithm>
+#include <fstream>
+#include <sstream>
+#include <cctype>
+#include "TreeMap.h" 
+#include "BinaryTree.h" 
 
-int main() {
-    TreeMap<std::string, int> map;
+using namespace std;
 
-    map.put("apple", 10);
-    map.put("banana", 20);
-    map.put("cherry", 30);
+void populateTreeMap(TreeMap<char, BinaryTree<string>>& treeMap, const string& filename) {
+    ifstream file(filename);
 
-    std::cout << "Size: " << map.size() << std::endl;
-    std::cout << "Get 'banana': " << map.get("banana") << std::endl;
-
-    map.removeKey("apple");
-    std::cout << "Contains 'apple': " << map.containsKey("apple") << std::endl;
-
-    std::cout << "KeySet: ";
-    auto keys = map.keySet().toArray();
-    for (int i = 0; i < map.size(); i++) {
-        std::cout << keys[i] << " ";
+    if (!file.is_open()) {
+        cerr << "Error: Could not open file " << filename << endl;
+        return;
     }
-    delete[] keys; // Clean up allocated array
-    std::cout << std::endl;
 
-    return 0;
+    string word;
+    while (file >> word) {
+        
+		//Remove punctuation from the word: https://stackoverflow.com/questions/19138983/c-remove-punctuation-from-string
+        word.erase(remove_if(word.begin(), word.end(), ::ispunct), word.end());
+
+		// Convert the word to lowercase: https://stackoverflow.com/questions/313970/how-to-convert-an-instance-of-stdstring-to-lower-case
+        transform(word.begin(), word.end(), word.begin(), ::tolower);
+
+        if (!word.empty()) {
+            char firstLetter = word[0];
+
+            if (!treeMap.containsKey(firstLetter)) {
+                treeMap.put(firstLetter, BinaryTree<string>()); 
+            }
+
+            treeMap[firstLetter].add(word);
+        }
+    }
+
+    file.close();
 }
+
+
+
+
+

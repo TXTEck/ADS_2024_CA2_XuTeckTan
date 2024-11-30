@@ -24,7 +24,7 @@ public:
     void put(const K& key, const V& value);
     int size();
     bool removeKey(const K& key);
-    V* operator[](const K& key);
+    V& operator[](const K& key);
     BinaryTree<K> keySet();
 };
 
@@ -59,8 +59,17 @@ V& TreeMap<K, V>::get(const K& key) {
 template <typename K, typename V>
 void TreeMap<K, V>::put(const K& key, const V& value) {
     KeyValue kv = { key, value };
-    tree.add(kv);
+
+    if (containsKey(key)) {
+        // If the key exists, update its value
+        tree.get(kv).value = value;
+    }
+    else {
+        //If not add a new KeyValue to the tree
+        tree.add(kv);
+    }
 }
+
 
 // Returns a Set view of the keys contained in this map.
 template <typename K, typename V>
@@ -89,10 +98,11 @@ int TreeMap<K, V>::size() {
 
 //Returns the value to which the specified key is mapped, or null if this map contains no mapping for the key.
 template <typename K, typename V>
-V* TreeMap<K, V>::operator[](const K& key) {
-    if (containsKey(key)) {
-        return &get(key);
+V& TreeMap<K, V>::operator[](const K& key) {
+    if (!containsKey(key)) {
+        throw std::logic_error("Key not found in TreeMap");
     }
-    return nullptr;
+    return get(key); 
 }
+
 
