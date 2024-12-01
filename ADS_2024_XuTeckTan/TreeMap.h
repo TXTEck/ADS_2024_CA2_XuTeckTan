@@ -75,7 +75,7 @@ void TreeMap<K, V>::put(const K& key, const V& value) {
 template <typename K, typename V>
 BinaryTree<K> TreeMap<K, V>::keySet() {
     BinaryTree<K> keys;
-    auto allNodes = tree.toArray();
+    KeyValue* allNodes = tree.toArray();
     for (int i = 0; i < tree.count(); i++) {
         keys.add(allNodes[i].key);
     }

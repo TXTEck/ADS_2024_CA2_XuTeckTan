@@ -40,6 +40,57 @@ void populateTreeMap(TreeMap<char, BinaryTree<string>>& treeMap, const string& f
 }
 
 
+void displayLetters(TreeMap<char, BinaryTree<string>>& treeMap) {
+    cout << "Letters found in the file:" << endl;
+
+    char* letters = treeMap.keySet().toArray(); 
+    for (int i = 0; i < treeMap.size(); i++) {
+        cout << letters[i] << " ";
+    }
+
+    cout << endl;
+    delete[] letters; 
+}
+
+void displayWordsForLetter(TreeMap<char, BinaryTree<string>>& treeMap, char letter) {
+    letter = tolower(letter); 
+
+    if (!treeMap.containsKey(letter)) {
+        cout << "No words found for the letter '" << letter << "'" << endl;
+        return;
+    }
+
+    string* words = treeMap[letter].toArray(); 
+    cout << "Words for the letter '" << letter << "':" << endl;
+
+    for (int i = 0; i < treeMap[letter].count(); i++) {
+        cout << words[i] << endl;
+    }
+
+    delete[] words; 
+}
+
+int main() {
+    TreeMap<char, BinaryTree<string>> treeMap;
 
 
+    string filename = "../part2.txt";
+
+
+    populateTreeMap(treeMap, filename);
+
+
+    displayLetters(treeMap);
+
+
+    char letter;
+    cout << "Enter a letter to view words, or '0' to exit: ";
+    while (cin >> letter && letter != '0') {
+        displayWordsForLetter(treeMap, letter);
+        cout << "Enter another letter, or '0' to exit: ";
+    }
+
+    cout << "Goodbye!" << endl;
+    return 0;
+}
 

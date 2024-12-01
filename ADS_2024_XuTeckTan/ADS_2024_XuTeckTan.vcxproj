@@ -132,7 +132,7 @@
     <ClInclude Include="TreeMap.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="method.cpp" />
+    <ClCompile Include="TreeMapMain.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
