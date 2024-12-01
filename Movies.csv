@@ -1,0 +1,101 @@
+MovieID,Title,Genre,ReleaseYear,Rating
+1,The Shawshank Redemption,Drama,1994,9.3
+2,The Godfather,Crime,1972,9.2
+3,The Dark Knight,Action,2008,9
+4,12 Angry Men,Drama,1957,9
+5,Schindler's List,History,1993,8.9
+6,The Lord of the Rings: The Return of the King,Adventure,2003,8.9
+7,Pulp Fiction,Crime,1994,8.9
+8,The Good  the Bad and the Ugly,Western,1966,8.8
+9,Forrest Gump,Drama,1994,8.8
+10,Fight Club,Drama,1999,8.8
+11,Inception,Sci-Fi,2010,8.7
+12,The Lord of the Rings: The Two Towers,Adventure,2002,8.7
+13,The Empire Strikes Back,Sci-Fi,1980,8.7
+14,The Matrix,Sci-Fi,1999,8.7
+15,Goodfellas,Crime,1990,8.7
+16,One Flew Over the Cuckoo's Nest,Drama,1975,8.7
+17,Se7en,Thriller,1995,8.6
+18,City of God,Crime,2002,8.6
+19,The Silence of the Lambs,Thriller,1991,8.6
+20,It's a Wonderful Life,Drama,1946,8.6
+21,Life Is Beautiful,Comedy,1997,8.6
+22,The Green Mile,Drama,1999,8.6
+23,Star Wars,Adventure,1977,8.6
+24,Parasite,Drama,2019,8.6
+25,Interstellar,Sci-Fi,2014,8.6
+26,Spirited Away,Animation,2001,8.6
+27,The Lion King,Animation,1994,8.5
+28,The Pianist,Biography,2002,8.5
+29,Terminator 2: Judgment Day,Action,1991,8.5
+30,Back to the Future,Sci-Fi,1985,8.5
+31,Whiplash,Drama,2014,8.5
+32,Gladiator,Action,2000,8.5
+33,Memento,Thriller,2000,8.4
+34,The Prestige,Drama,2006,8.4
+35,The Departed,Crime,2006,8.4
+36,Apocalypse Now,War,1979,8.4
+37,Alien,Sci-Fi,1979,8.4
+38,The Great Dictator,Comedy,1940,8.4
+39,The Shining,Horror,1980,8.4
+40,WALL-E,Animation,2008,8.4
+41,Coco,Animation,2017,8.4
+42,Avengers: Endgame,Action,2019,8.4
+43,American History X,Drama,1998,8.4
+44,Casablanca,Romance,1942,8.4
+45,Django Unchained,Western,2012,8.4
+46,Braveheart,Drama,1995,8.4
+47,The Intouchables,Biography,2011,8.4
+48,Amadeus,Biography,1984,8.4
+49,Toy Story,Animation,1995,8.3
+50,The Dark Knight Rises,Action,2012,8.3
+51,Up,Animation,2009,8.3
+52,Inglourious Basterds,Adventure,2009,8.3
+53,The Wolf of Wall Street,Comedy,2013,8.2
+54,Shutter Island,Mystery,2010,8.2
+55,La La Land,Romance,2016,8.2
+56,The Truman Show,Comedy,1998,8.1
+57,Joker,Crime,2019,8.1
+58,Doctor Strange,Fantasy,2016,7.9
+59,Iron Man,Action,2008,7.9
+60,Black Panther,Action,2018,7.9
+61,Thor: Ragnarok,Comedy,2017,7.9
+62,Guardians of the Galaxy,Sci-Fi,2014,8
+63,Captain America: The Winter Soldier,Action,2014,7.7
+64,Frozen,Animation,2013,7.5
+65,Moana,Animation,2016,7.6
+66,Zootopia,Animation,2016,8
+67,Tangled,Animation,2010,7.7
+68,Beauty and the Beast,Romance,1991,8
+69,Finding Nemo,Animation,2003,8.1
+70,Inside Out,Animation,2015,8.1
+71,Monsters Inc.,Animation,2001,8.1
+72,The Incredibles,Animation,2004,8
+73,The Little Mermaid,Animation,1989,7.6
+74,Aladdin,Animation,1992,8
+75,The Jungle Book,Animation,1967,7.6
+76,Peter Pan,Animation,1953,7.5
+77,Bambi,Animation,1942,7.3
+78,Snow White and the Seven Dwarfs,Animation,1937,7.6
+79,Pinocchio,Animation,1940,7.5
+80,Dumbo,Animation,1941,7.2
+81,Cinderella,Animation,1950,7.3
+82,Alice in Wonderland,Animation,1951,7.4
+83,Sleeping Beauty,Animation,1959,7.2
+84,101 Dalmatians,Animation,1961,7.2
+85,Lady and the Tramp,Animation,1955,7.3
+86,The Rescuers,Animation,1977,7.2
+87,The Sword in the Stone,Animation,1963,7.2
+88,The Aristocats,Animation,1970,7.1
+89,Robin Hood,Animation,1973,7.1
+90,Wreck-It Ralph,Animation,2012,7.7
+91,Ratatouille,Animation,2007,8
+92,Toy Story 2,Animation,1999,7.9
+93,Toy Story 3,Animation,2010,8.3
+94,Toy Story 4,Animation,2019,7.7
+95,Soul,Animation,2020,8.1
+96,Luca,Animation,2021,7.5
+97,Encanto,Animation,2021,7.3
+98,Turning Red,Animation,2022,7.1
+99,Lightyear,Animation,2022,6.6
+100,Minions,Animation,2015,6.4
