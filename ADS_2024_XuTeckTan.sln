@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ADS_2024_XuTeckTan", "ADS_2024_XuTeckTan\ADS_2024_XuTeckTan.vcxproj", "{6C3CFABB-71C3-4834-A8F4-8E3776EDF128}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MoviesIndex", "MoviesIndex\MoviesIndex.vcxproj", "{CD49E0BC-C01D-4AE8-8AC4-4AFC3B9F9C0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{6C3CFABB-71C3-4834-A8F4-8E3776EDF128}.Release|x64.Build.0 = Release|x64
 		{6C3CFABB-71C3-4834-A8F4-8E3776EDF128}.Release|x86.ActiveCfg = Release|Win32
 		{6C3CFABB-71C3-4834-A8F4-8E3776EDF128}.Release|x86.Build.0 = Release|Win32
+		{CD49E0BC-C01D-4AE8-8AC4-4AFC3B9F9C0D}.Debug|x64.ActiveCfg = Debug|x64
+		{CD49E0BC-C01D-4AE8-8AC4-4AFC3B9F9C0D}.Debug|x64.Build.0 = Debug|x64
+		{CD49E0BC-C01D-4AE8-8AC4-4AFC3B9F9C0D}.Debug|x86.ActiveCfg = Debug|Win32
+		{CD49E0BC-C01D-4AE8-8AC4-4AFC3B9F9C0D}.Debug|x86.Build.0 = Debug|Win32
+		{CD49E0BC-C01D-4AE8-8AC4-4AFC3B9F9C0D}.Release|x64.ActiveCfg = Release|x64
+		{CD49E0BC-C01D-4AE8-8AC4-4AFC3B9F9C0D}.Release|x64.Build.0 = Release|x64
+		{CD49E0BC-C01D-4AE8-8AC4-4AFC3B9F9C0D}.Release|x86.ActiveCfg = Release|Win32
+		{CD49E0BC-C01D-4AE8-8AC4-4AFC3B9F9C0D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
